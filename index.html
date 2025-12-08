@@ -1,189 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi" class="scroll-smooth">
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trần Văn Lực - Web Developer</title>
+  <meta name="description" content="Trần Văn Lực - Web Developer đam mê xây dựng sản phẩm chất lượng với công nghệ hiện đại."/>
+
+  <!-- SEO & Social -->
+  <meta property="og:title" content="Trần Văn Lực - Web Developer" />
+  <meta property="og:description" content="Web Developer chuyên React, Node.js, Tailwind và các công nghệ hiện đại." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Trần+Văn+Lực+Portfolio" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trần Văn Lực - Web Developer">
+  <meta name="twitter:description" content="Web Developer chuyên React, Node.js, Tailwind và các công nghệ hiện đại.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Trần+Văn+Lực+Portfolio">
+
+  <!-- Favicon (tạo nhanh tại favicon.io nếu cần) -->
+  <link rel="icon" href="data:,">
+
+  <!-- Tailwind CSS + Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body, h1 {
-      font-family: "Raleway", sans-serif;
-    }
-
-    body, html {
-      height: 100%;
-    }
-
-    .bgimg {
-
-      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;  
-      background-size: cover;
-    }
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    .text-gradient { background: linear-gradient(to right, #14b8a6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   </style>
-
-<meta name="title" content="Tran Van Luc - Portfolio">
-<meta name="description" content="Hi, I'm Tran Van Luc. I'm a web developer. Welcome to my portfolio website!">
-<meta name="keywords" content="portfolio, web developer, fullstack">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="author" content="Tran Van Luc">
-
-<!-- Open Graph (Facebook, Zalo, LinkedIn) -->
-<meta property="og:title" content="Tran Van Luc - Portfolio" />
-<meta property="og:description" content="Hi, I'm Tran Van Luc. Welcome to my developer portfolio!" />
-<meta property="og:url" content="/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/banner.avif" />
-
-<!-- Twitter Card -->
-<meta name="twitter:title" content="Tran Van Luc - Portfolio">
-<meta name="twitter:description" content="Hi, I'm Tran Van Luc. I'm a web developer.">
-<meta name="twitter:image" content="/banner.avif">
-<meta name="twitter:card" content="summary_large_image">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
 </head>
 
-<body>
+<body class="bg-slate-50 text-gray-800">
 
-  <!-- banner -->
-<section
-  class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
-
-  <div class="w-full lg:w-[80%] p-12 text-gray-800">
-
-    <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
-      <span>Hi, my name is <span class="text-teal-400">Tran Van Luc</span></span>
-      <span class="text-gray-800">I'm the Web Developer.</span>
-    </h1>
-
-    <a href="#about-me"
-      class="uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer">
-      <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light">Know more</span>
-    </a>
-
-  </div>
-
-</section>
-<!-- banner ./ -->
-
-<!-- about me -->
-<section id="about-me"
-  class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
-
-  <div class="w-full lg:w-[60%] mb-5">
-
-    <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
-
-    <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
-
-      <div class="flex justify-center items-center text-center col-span-1">
-        <img class="object-cover max-w-xs lg:w-auto"
-          src="https://nguyenhuuquyen.com/imgs/avatar.png" alt="My avatar" />
+  <!-- HERO -->
+  <section class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+        Xin chào, mình là<br>
+        <span class="text-gradient text-6xl md:text-8xl">Trần Văn Lực</span>
+      </h1>
+      <p class="text-2xl md:text-4xl font-light text-teal-200 mb-10">
+        Web Developer
+      </p>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+        Đam mê xây dựng những sản phẩm web nhanh, đẹp và dễ sử dụng với công nghệ hiện đại.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="#contact" class="px-10 py-4 bg-teal-500 text-white font-medium rounded-full hover:bg-teal-400 transition transform hover:scale-105">
+          Liên hệ mình
+        </a>
+        <a href="https://github.com/eycoon" target="_blank" class="px-10 py-4 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-gray-900 transition transform hover:scale-105">
+          GitHub →
+        </a>
       </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </div>
+  </section>
 
-      <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
-        <div class="p-0 text-center lg:p-8 lg:text-start">
-
-          <p class="pb-3 text-lg font-light mb-5">
-            I love programming, application development, and research software architecture. My career
-            objective is to become a Senior Software Engineer who masters software architecture, design
-            principles, and modern development technologies.
+  <!-- ABOUT ME -->
+  <section id="about" class="py-24 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-6xl font-bold text-center mb-16">Về mình</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="images/avatar.jpg" alt="Trần Văn Lực" class="rounded-2xl shadow-2xl w-full">
+        </div>
+        <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <p>
+            Mình là <strong>Trần Văn Lực</strong> – một Web Developer đang không ngừng học hỏi và hoàn thiện bản thân mỗi ngày.
           </p>
-
-          <a href="https://drive.google.com/file/d/1rrqhPdD-moRjUvEqm7f_e6NvI_2hLhV_"
-            target="_blank"
-            class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
-            <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-normal">View My CV</span>
-          </a>
-
+          <p>
+            Mình thích làm việc với các công nghệ hiện đại như <strong>React, Next.js, Node.js, Tailwind CSS</strong> và luôn tìm cách tối ưu trải nghiệm người dùng và hiệu suất sản phẩm.
+          </p>
+          <p>
+            Mục tiêu của mình là trở thành <strong>Senior Software Engineer</strong> có khả năng thiết kế kiến trúc hệ thống tốt, viết code sạch và đóng góp giá trị thực sự cho đội nhóm cũng như khách hàng.
+          </p>
+          <p>
+            Ngoài code, mình còn thích nghe nhạc lo-fi, uống cà phê và đọc sách về thiết kế sản phẩm.
+          </p>
         </div>
       </div>
-
     </div>
+  </section>
 
-  </div>
+  <!-- SKILLS -->
+  <section class="py-24 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-6xl font-bold text-center mb-16">Kỹ năng & Công nghệ</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">⚛️</div>
+          <h3 class="font-semibold text-xl">React / Next.js</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🚀</div>
+          <h3 class="font-semibold text-xl">Node.js</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🎨</div>
+          <h3 class="font-semibold text-xl">Tailwind CSS</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🗄️</div>
+          <h3 class="font-semibold text-xl">MongoDB / MySQL</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🐍</div>
+          <h3 class="font-semibold text-xl">Python</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🔥</div>
+          <h3 class="font-semibold text-xl">Firebase</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🐙</div>
+          <h3 class="font-semibold text-xl">Git & GitHub</h3>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition">
+          <div class="text-5xl mb-4">⚡</div>
+          <h3 class="font-semibold text-xl">Vite / TypeScript</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
-<!-- about me ./ -->
-
-<!-- contact -->
-<section id="contact"
-  class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
-
-  <div class="w-full lg:w-[60%] mb-5">
-    <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
-
-    <p class="flex flex-col justify-center items-center pt-5 pb-5 text-center">
-      <span class="text-2xl text-teal-500 mb-3">I LOOK FORWARD TO WORKING WITH YOU</span>
-      <span>I'm so happy that my skills might bring values to you. Let's connect for work</span>
-    </p>
-  </div>
-
-  <a href="mailto: nghuuquyen@gmail.com?subject=Hi, Quyen I want to connect with you for work !!!&body=Please describe your work or projects requirements"
-    class="border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
-    <span class="text-xl uppercase font-light">Send An Email Now</span>
-  </a>
-
-</section>
-<!-- contact ./ -->
-
-<!-- footer -->
-<footer class="bg-neutral-900 min-h-[300px] pt-12 pb-12 flex flex-row justify-center items-center">
-
-  <div class="w-[60%] flex flex-col justify-center items-center">
-
-    <ul class="flex flex-row">
-      <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-        <a href="https://twitter.com/nghuuquyen" target="_blank">
-          <img class="w-10 grayscale hover:grayscale-0" src="/imgs/twitter.svg" />
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6 gradient-bg text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-10">Bắt đầu dự án cùng mình?</h2>
+      <p class="text-xl mb-12 text-gray-300">
+        Mình luôn sẵn sàng cho các dự án freelance, full-time hoặc chỉ đơn giản là uống ly cà phê trò chuyện về công nghệ.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <a href="mailto:txcl3107@gmail.com" class="px-12 py-5 bg-teal-500 hover:bg-teal-400 rounded-full font-medium text-lg transition transform hover:scale-105">
+          Gửi Email Cho Mình
         </a>
-      </li>
-
-      <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-        <a href="https://www.linkedin.com/in/nghuuquyen" target="_blank">
-          <img class="w-10 grayscale hover:grayscale-0" src="/imgs/linkedin.svg" />
+        <a href="https://github.com/eycoon" target="_blank" class="px-12 py-5 border-2 border-white hover:bg-white hover:text-gray-900 rounded-full font-medium text-lg transition transform hover:scale-105">
+          GitHub Profile
         </a>
-      </li>
-
-      <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-        <a href="https://github.com/nghuuquyen" target="_blank">
-          <img class="w-10 grayscale hover:grayscale-0" src="/imgs/github.svg" />
-        </a>
-      </li>
-    </ul>
-
-    <hr class="w-1/2 border-gray-500 mt-10" />
-    <p class="text-lg text-gray-500 mt-5">©2023 - Quyen Nguyen Huu</p>
-
-  </div>
-</footer>
-<!-- footer ./ -->
-
-
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white"> 
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Tran Van Luc
+      </div>
+      <p class="mt-12 text-gray-400">
+        © 2025 Trần Văn Lực. Made with ❤️ and lots of coffee.
+      </p>
     </div>
+  </section>
 
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-
-    </div>
-  </div>
-  <div class="flex flex-row justify-center items-center p-12">
-      <h1 class="text-5xl text-green-300 animate-bounce">Hello, Tailwind CSS</h1>
-    </div>
-
-  <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
